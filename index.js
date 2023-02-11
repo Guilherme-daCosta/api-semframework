@@ -21,7 +21,7 @@ const server = http.createServer((req, res) => {
             };
 
             users.push(user);
-            
+
         }).on("end", () => {
             return res.end(JSON.stringify(users));
         });
